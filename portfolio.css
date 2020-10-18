@@ -1,0 +1,382 @@
+html{
+    scroll-behavior: smooth;
+}
+
+    body{
+     margin: 0px;
+     padding: 0px;
+  
+    
+ }
+ ul{
+     list-style: none;
+     position:sticky;
+ }
+ a{
+     text-decoration: none;
+ }
+ #header{
+     width: 100%;
+     height: 100vh;
+     box-sizing: border-box;
+     background-color:white;
+     position: relative;
+    background-image: url(./sera.png);
+    background-repeat: no-repeat;
+    background-size:300px ;
+  background-position: 50rem;
+  
+ }
+ nav{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   text-transform: uppercase;
+   font-weight: 40;
+   letter-spacing: 4px;
+   font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+   top: 0;
+   position:sticky;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 10px 50px;
+   background-color:rgba(255, 255, 255, 0.842);
+   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+   z-index: 1;
+ }
+ nav:hover{
+      background-image:linear-gradient(rgba(220, 226, 224, 0.137),rgb(155, 187, 187));
+ }
+.menu{
+    display: flex;
+    
+}
+.menu li a{
+    padding: 10px 15px;
+    color:black;
+    font-size: 15px;
+     font-weight:500px;
+   letter-spacing: 4px;
+   font-family: 'Lucida Sans';
+}
+.name{
+     padding: 10px 15px;
+    color:black;
+     font-size: 20px;
+     font-weight:bold;
+   letter-spacing: 4px;
+}
+.menu li a:hover{
+   
+    
+    color:white;
+    background-color:black ;
+    font-weight: 600;
+    transition: all 0.2s ease ;
+   
+}
+ #home{
+     font-family:  'Calibri';
+     width:500px;
+     position: absolute;
+     left: 10%;
+     top:20%;
+     position: absolute;
+     align-items: center;
+     transform: translate(20%,20%);
+ }
+ #home h2{
+      font-size: 30px;
+      font-weight: bold;
+      color:black;
+      letter-spacing: 3px;
+       
+ }
+ 
+  .details{
+     color:black;
+     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+     letter-spacing: 2px;
+     font-size: 16px;
+ }
+.cv{
+  border: 2px solid black;
+   position: relative;
+     top: 10vh;
+   width: 300px;
+   letter-spacing: 2px;
+   margin:10px auto;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 15px;
+   font-weight: 200;
+   text-align: center;
+   justify-content: center;
+    background-color: black;
+    padding: 10px 10px;
+    outline: none;
+    color:whitesmoke;
+    cursor: pointer;
+
+}
+ .cv:hover{
+  
+ background: white;
+ color: black;
+  cursor: pointer;
+}
+
+#card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+
+#about{
+    
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    justify-content: flex-start;
+    border-radius: 20px;
+      background-image:linear-gradient(rgba(220, 226, 224, 0.137),rgb(155, 187, 187));
+
+   
+
+}
+#about img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+#about:hover img{
+    left: 80%;
+    height: 500px;
+}
+#card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#card:hover .content{
+    left:0% ;
+    visibility: visible;
+    opacity: 1;
+}
+
+#card .content h2{
+    color:black;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 25px;
+}
+#card .content p{
+    color: black;
+}
+#card .content button{
+    position: relative;
+    display: inline-block;
+    color:white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: black;
+    margin-top: 10px;
+  
+}
+#card .content button:hover{
+    color: black;
+    background: white;
+}
+ #skill h2{
+  position: relative;
+  top: 10%;
+ text-align: center;
+    color:rgba(20, 0, 0, 0.87);
+      letter-spacing: 2px;
+      font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 2px;
+ }
+ #skill{
+     width: 300px;
+    padding: 50px;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    top: 40vh;
+    left: 50%;
+     color:black;
+    transform: translate(-50%,-50%);
+     background-image:linear-gradient(rgb(155, 187, 187),rgba(220, 226, 224, 0.137));
+     box-shadow: 0 0 10px solid black;
+ }
+ #skill li{
+     margin: 3px 0;
+    
+ }
+  
+ .bar{
+    
+     background-color:rgb(19, 13, 13);
+     display: block;
+     height:2px;
+     border: 1px solid rgba(0,0,0,0.3);
+     border-radius: 24px;
+     overflow: hidden;
+    
+ }
+ .bar span{
+     height: 2px;
+       float: left;
+     background:whitesmoke;
+     
+ }
+ .html{
+     width: 80%;
+ }
+ .css{
+      width: 50%;
+ }
+ .js{
+     width: 20%;
+ }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+#contact{
+    width: 500px;
+    padding: 40px;
+    position: relative;
+    top: 70vh;
+    bottom: 40vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   background-image:linear-gradient(rgb(155, 187, 187),rgba(135, 216, 190, 0.137));
+    text-align: center;
+  box-shadow: 0 0 10px;
+    
+}
+#contact h1{
+    color: black;
+     font-family: 'Segoe UI', Tahoma,  Verdana, sans-serif;
+     font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+#contact:hover{
+   background-image:linear-gradient(rgba(126, 170, 156, 0.137),rgb(125, 160, 160));
+}
+#contact input[type ="text"],#contact textarea
+{
+   border: 0;
+   background: none;
+   display: block;
+   margin: 20px auto;
+   text-align: center;
+  
+    border: 2px solid black;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color:black;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+#contact input[type ="text"]:focus, #contact textarea:hover
+{
+   width: 250px;
+   border-color: black;
+}
+
+
+button
+{
+     border: 0;
+   background: none;
+   display: block;
+   margin: 20px auto;
+   text-align: center;
+    border: 2px solid  black;
+    padding: 14px 40px;
+    outline: none;
+     background:black;
+ color: white;
+   
+    border-radius: 24px;
+   
+}
+button:hover{
+  color:black;
+    
+    background: white;
+  cursor: pointer;
+}
+#project{
+      width: 300px;
+    padding: 50px;
+    position: relative;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    top: 55vh;
+   
+    left: 50%;
+     color:black;
+    transform: translate(-50%,-50%);
+     background-image:linear-gradient(rgba(220, 226, 224, 0.137),rgb(155, 187, 187));
+     box-shadow: 0 0 10px solid black;
+}
+#project p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+
+#footer{
+
+   justify-content:space-between;
+   position: relative;
+   
+   bottom: 0;
+   top: 40vh;
+  height:100%;
+   width: 100%;
+   box-sizing: border-box;
+  padding: 10px 10px;
+   background-image:linear-gradient(rgba(125, 221, 189, 0.137),rgb(128, 190, 190));
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.87);
+  
+ } 
+ #footer h1{
+    position: relative;
+    top:6vh;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif ;
+       font-weight: bold;
+   letter-spacing: 4px;
+   animation:60s linear infinite;
+ }
+#footer p{
+     position: relative;
+    text-align: right;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif ;
+       font-weight: 400;
+   letter-spacing: 2px;
+}

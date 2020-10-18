@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial.scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./portfolio.css">
+    <script type="text/javascript">
+        function log1() {
+            document.getElementById("para").innerHTML = "Thank you for contacting us.Will catch up soon!!"
+        }
+        
+    </script>
+</head>
+
+<body>
+
+    <section id="header">
+        <nav>
+            <a class="name" href="#name">Sera Mariam George</a>
+
+            <ul class="menu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#card">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><a href="#project">Project</a></li>
+
+            </ul>
+        </nav>
+    </section>
+
+    <section id="home">
+        <div class="details">
+
+            <p >Hello there!!</p>
+        <h2> I'm Sera Mariam George </h2>
+          
+            <p style="text-align:center;"> 
+                I have made a small portfolio website.Do check out my accomplishments and projects.I hope you would like it.
+               <br>
+               <h4> Click below to download my cv!!!.</h4>
+            </p>
+        </div>
+        <a href="#" class="cv">Download cv</a>
+    </section>
+
+    <section id="card">
+        <div id="about">
+            <div class="content">
+                <h2>ABOUT ME</h2>
+                <p style="text-align:left;">
+                 <div><p id="readless"> I'm Sera Mariam George.I am a second year  Computer Science B.tech student of Mar Baselios College Engineering College,Trivandrum.<span id="dots">...</span>
+                 </p>
+                </div>
+               <div> <span id="readmore"> I am staying at Trivandrum, Kerala. I have interests in programming,web development and robotics.
+                    <br>I am an IEEE Robotics and Automation Society member as well as <br>Computer Society memeber.</span>
+            </div>
+           
+            <button id="read" onclick="Read()">Read Less</button>
+            </p>
+            </div>
+            <script>
+                    
+                    function Read() {
+                         var readmore = document.getElementById('readmore');
+                        var dot = document.getElementById('dots');
+                        var btn = document.getElementById('read');
+                        if (dot.style.display == "none") {
+                           
+                            dot.style.display = "block";
+                             readmore.style.display = "none";
+                            read.innerHTML="Read More";
+                           
+                            
+                        }
+                        else {
+
+                            readmore.style.display = "block";
+                            dot.style.display = "none";
+                            read.innerHTML = "Read Less";
+                            c=0;
+                        }
+                        
+                    }
+            </script>
+            <img src="./sera.png">
+
+        </div>
+    </section>
+    <section id="skill">
+        <ul>
+            <h2>Skill</h2>
+            <br>
+            <li>
+                <h3>HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+            </li>
+
+            <li>
+                <h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+            </li>
+
+            <li>
+                <h3>JAVASCRIPT</h3>
+                <span class="bar"><span class="js"></span></span>
+            </li>
+
+        </ul>
+
+
+    </section>
+    <section id="contact">
+        <h1>Contact us</h1>
+        <br>
+        <input type="text" name="" placeholder="Full name" required/>
+
+        <input type="text" name="" placeholder="Email" required/>
+        
+        <input type="text" name="" placeholder="Phone number" required/>
+        
+        <textarea cols="45" rows="5"  placeholder="Message" required>Message </textarea>
+        <br>
+        <button id="sub" onclick="log1()">Send us</button>
+        <p id="para"></p>
+    </section>
+    <section id="project">
+        <h1 style="text-align: center;">PROJECT</h1>
+        <form  action="https://seramg.github.io/project/">
+        <p style=" text-align: center;" >
+            I have made a minicounter <br>
+         On clicking the + sign the number gets increemented, and
+        on clicking the - sign the number gets decreemented.bar<br>
+        Click below to see!!
+        Do check it out!!
+        </p>
+        <button >Click here</button>
+
+        </form>
+
+    </section>
+    <section id="footer">
+
+        <h1>Developed by sera </h1>
+        <p>Location:Muttada</p>
+        </ul>
+    </section>
+
+    </section>
